@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <link rel="icon" type="icon" href="logo/test-quiz-svgrepo-com.svg">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="O'zbek tili, adabiyoti va chet el adabiyoti bo'yicha 100 talik premium quiz game."
+    />
+    <title>Bilim Test | Quiz Testlar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+            <section class="screen screen--landing active" id="landing-screen" aria-labelledby="landing-title">
+        <div class="landing-panel glass-card">
+          <span class="eyebrow">Bepul online quiz</span>
+          <h1 id="landing-title">Bilimingizni sinab ko'ring</h1>
+          <p>
+            O'zbek ona tili, adabiyoti va chet el adabiyoti bo'yicha 100 ta test savoli.
+            Natijangizni darhol ko'ring.
+          </p>
+
+          <button class="primary-btn landing-btn" id="free-quiz-btn" type="button">
+            Quiz test bepul
+          </button>
+        </div>
+      </section>
+<section class="screen screen--start" id="start-screen" aria-labelledby="start-title">
+        <div class="hero-panel glass-card">
+          <span class="eyebrow">100 talik testlar</span>
+          <h1 id="start-title">O'zbek ona tili va adabiyoti</h1>
+          <p>
+            DTM uslubidagi savollar: fonetika, leksikologiya, grammatika,
+            o'zbek adabiyoti va chet el adabiyoti.
+          </p>
+
+          <div class="stats-grid" aria-label="Quiz ko'rsatkichlari">
+            <div>
+              <strong id="start-total">100</strong>
+              <span>Savol</span>
+            </div>
+            <div>
+              <strong>04</strong>
+              <span>Variant</span>
+            </div>
+            <div>
+              <strong id="start-time">25:00</strong>
+              <span>Timer</span>
+            </div>
+          </div>
+
+          <button class="primary-btn" id="start-btn" type="button">
+            Testni boshlash
+          </button>
+        </div>
+      </section>
+
+      <section class="screen screen--quiz" id="quiz-screen" aria-live="polite">
+        <div class="quiz-layout glass-card">
+          <header class="quiz-topbar">
+            <div>
+              <span class="eyebrow">Bilim sinovi</span>
+              <h2 id="question-text">Savol yuklanmoqda...</h2>
+            </div>
+            <div class="timer-card" aria-label="Qolgan vaqt">
+              <span>Vaqt</span>
+              <strong id="timer">25:00</strong>
+            </div>
+          </header>
+
+          <div class="quiz-meta">
+            <p>Savol <span id="current-question">1</span>/<span id="total-questions">100</span></p>
+            <p>Ball: <span id="score">0</span></p>
+          </div>
+
+          <div class="progress-track" aria-hidden="true">
+            <div id="progress" class="progress-fill"></div>
+          </div>
+
+          <div id="answers-container" class="answers-container"></div>
+        </div>
+      </section>
+
+      <section class="screen screen--result" id="result-screen" aria-labelledby="result-title">
+        <div class="result-panel glass-card">
+          <span class="eyebrow">Natija</span>
+          <h1 id="result-title">Test yakunlandi</h1>
+
+          <div class="score-ring" aria-label="Yakuniy foiz">
+            <span id="result-percent">0%</span>
+          </div>
+
+          <p class="result-score">
+            Siz <span id="final-score">0</span> ta to'g'ri javob berdingiz.
+            Maksimal ball: <span id="max-score">100</span>.
+          </p>
+          <p id="result-message" class="result-message">Natija tayyor.</p>
+
+          <button class="primary-btn" id="restart-btn" type="button">
+            Qayta boshlash
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
