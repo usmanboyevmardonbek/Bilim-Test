@@ -2781,4 +2781,21 @@ function escapeHtml(value) {
   div.textContent = value;
   return div.innerHTML;
 }
+// Sichqonchaning o'ng tugmasini bloklash
+document.addEventListener('contextmenu', (e) => e.preventDefault());
 
+// Klaviatura tugmalarini bloklash
+document.addEventListener('keydown', (e) => {
+  // F12 tugmasini bloklash
+  if (e.key === 'F12') {
+    e.preventDefault();
+  }
+  // Ctrl + U ni bloklash
+  if (e.ctrlKey && (e.key === 'u' || e.key === 'U')) {
+    e.preventDefault();
+  }
+  // Ctrl + Shift + I ni bloklash (DevTools)
+  if (e.ctrlKey && e.shiftKey && (e.key === 'i' || e.key === 'I')) {
+    e.preventDefault();
+  }
+});
