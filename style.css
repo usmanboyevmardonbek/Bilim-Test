@@ -416,6 +416,18 @@ h2 {
     min-height: 60px;
     padding: 12px;
   }
+  .author-credit {
+  width: fit-content;
+  max-width: 100%;
+  margin: 24px auto 0;
+  padding: 9px 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  color: #ffdca0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.4;
+  opacity: 0.92;
+}
 
   .answer-label {
     width: 36px;
