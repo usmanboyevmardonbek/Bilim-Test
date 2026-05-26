@@ -2622,7 +2622,7 @@ const quizQuestions = [
   }
 ];
 
-const QUESTION_TIME_SECONDS = 15;
+const QUESTION_TIME_SECONDS = 36;
 const TOTAL_TIME_SECONDS = quizQuestions.length * QUESTION_TIME_SECONDS;
 const RESULT_MESSAGES = [
   { min: 90, text: "A'lo natija! Siz mavzuni juda yaxshi egallagansiz." },
