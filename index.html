@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="uz">
   <head>
     <link rel="icon" type="icon" href="quiz.png">
@@ -17,7 +17,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body oncontextmenu="return false" oncopy="return false" oncut="return false" ondragstart="return false">
     <main class="app-shell">
             <section class="screen screen--landing active" id="landing-screen" aria-labelledby="landing-title">
         <div class="landing-panel glass-card">
@@ -27,6 +27,7 @@
             O'zbek ona tili, adabiyoti va chet el adabiyoti bo'yicha 100 ta test savoli.
             Natijangizni darhol ko'ring.
           </p>
+
 
           <button class="primary-btn landing-btn" id="free-quiz-btn" type="button">
             Quiz test bepul
@@ -75,7 +76,7 @@
             </div>
             <div class="timer-card" aria-label="Qolgan vaqt">
               <span>Vaqt</span>
-              <strong id="timer">25:00</strong>
+              <strong id="timer">60:00</strong>
             </div>
           </header>
 
@@ -89,6 +90,15 @@
           </div>
 
           <div id="answers-container" class="answers-container"></div>
+
+          <div class="quiz-actions" aria-label="Savollar bo'yicha harakatlar">
+            <button class="secondary-btn" id="prev-btn" type="button">
+              Oldingi
+            </button>
+            <button class="primary-btn" id="next-btn" type="button">
+              Keyingi
+            </button>
+          </div>
         </div>
       </section>
 
@@ -105,17 +115,22 @@
             Siz <span id="final-score">0</span> ta to'g'ri javob berdingiz.
             Maksimal ball: <span id="max-score">100</span>.
           </p>
+          <p id="result-summary" class="result-summary">
+            Javoblar hisoblanmoqda...
+          </p>
           <p id="result-message" class="result-message">Natija tayyor.</p>
 
           <button class="primary-btn" id="restart-btn" type="button">
-            Qayta boshlash
+            Qayta urinish
           </button>
         </div>
       </section>
     </main>
-    
 
     <script src="script.js"></script>
   </body>
 </html>
+
+
+
 
